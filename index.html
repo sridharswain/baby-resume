@@ -10,6 +10,7 @@
     <meta name="author" content="Devika Ani">
     <title>Portfolio - Devika Anil </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="side-navigation-dots.css">
     <!-- font for the quote -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +27,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <script src="./js/animation.js" >
-    </script>
+    <script src="./js/animation.js"></script>
     <!-- navigation bar -->
     <nav class="sticky">
         <label for="drop" class="toggle" id="main-toggle">
@@ -42,9 +44,42 @@
             <li><a href="./assets/Devika_Anil_Resume.pdf">Resume</a></li>
             <!--<li><a href="skill-set.html">Skill-set</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>-->
+            <li><a href="./assets/Devika_Anil_Resume.pdf">Proof of work</a></li>
             <li><a href="#contact-me">Contact me</a></li>
         </ul>
     </nav>
+
+    <div class="dots-table">
+        <div class="dots-cell">
+            <ul class="dots">
+                <!-- <li class="active"><a href="#">About</a></li> -->
+                <li class="active">
+                    <a href="#">
+                        <div></div>
+                        <h4>Introduction</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#poc-section">
+                        <div></div>
+                        <h4>Experience</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#poc-section">
+                        <div></div>
+                        <h4>Resume</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#poc-section">
+                        <div></div>
+                        <h4>Contact me</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- introduction -->
     <header class="grid-system-2 w-900 padding">
@@ -75,9 +110,18 @@
             <img class="max-width max-height" src="assets/about-me.png" alt="about-me-logo">
         </section>
         <section class="justify align-center">
-            <p>Thank you for stopping by! As a product manager, I harness empathy and a deep understanding of human cognition to develop life-enhancing products. Also passionate about teaching kids, my approach to product design mirrors creating meaningful experiences, always stepping out of my comfort zone to innovate. In fast-paced startups, I’ve refined translating technical insights into practical strategies that propel growth. I'm all about making complex concepts easy to understand and exciting for everyone involved.</p>
+            <p>Thank you for stopping by! As a product manager, I harness empathy and a deep understanding of human
+                cognition to develop life-enhancing products. Also passionate about teaching kids, my approach to
+                product design mirrors creating meaningful experiences, always stepping out of my comfort zone to
+                innovate. In fast-paced startups, I’ve refined translating technical insights into practical strategies
+                that propel growth. I'm all about making complex concepts easy to understand and exciting for everyone
+                involved.</p>
             <!--<p class="padding-top"><a href="about-me.html" class="button-outline">More info</a></p> -->
         </section>
+    </section>
+
+    <section id="poc-section">
+
     </section>
 
     <!-- skills -->
@@ -170,17 +214,20 @@
         </section>
         <section class="margin-auto align-center">
             <h1 class="medium-spacing center">Let's get in touch!<span></span></h1>
-            <p align="justify"> All good things take time, including this portfolio. While it’s under construction, don’t hesitate to reach out and start a conversation! </p>
+            <p align="justify"> All good things take time, including this portfolio. While it’s under construction,
+                don’t hesitate to reach out and start a conversation! </p>
             <section class="box-contact margin-auto padding-top">
                 <span>
-                    <a href="https://www.linkedin.com/in/devika-anil" target="_blank"><img class="logo" src="assets/linkedin.png"
+                    <a href="https://www.linkedin.com/in/devika-anil" target="_blank"><img class="logo"
+                            src="assets/linkedin.png" alt=""></a>
+                </span>
+                <span>
+                    <a href="https://github.com/DevikaAnil" target="_blank"><img class="logo" src="assets/github.png"
                             alt=""></a>
                 </span>
                 <span>
-                    <a href="https://github.com/DevikaAnil" target="_blank"><img class="logo" src="assets/github.png" alt=""></a>
-                </span>
-                <span>
-                    <a href="mailto:devikaanil.cp@gmail.com" target="_blank"><img class="logo" src="assets/email.png" alt=""></a>
+                    <a href="mailto:devikaanil.cp@gmail.com" target="_blank"><img class="logo" src="assets/email.png"
+                            alt=""></a>
                 </span>
             </section>
         </section>
